@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBooth</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <script src="https://kit.fontawesome.com/45f8117e42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo"><a href="#home">Photo<span>Booth</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Back</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.jpeg">
+            </div>
+        </div>
+
+        <!------------------Settings-menu------------------------>
+
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.jpeg">
+                    <div>
+                        <p>Front_Bot</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!------------------left-sidebar------------------------>
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="personalgallery.html"><i class="fas fa-user"></i> Personal Gallery</a>
+                <a href=""><i class="fas fa-cat"></i> Wildlife Gallery</a>
+                <a href=""><i class="fas fa-user-friends"></i> Friends Gallery</a>
+                <a href=""><i class="fa fa-users"></i> Family Gallery</a>
+                <a href=""><i class="fas fa-university"></i> College Gallery</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Design</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <!------------------main-content------------------------>
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.jpeg">
+                    <div>
+                        <p>Front_Bot</p>
+                        <small>Public<i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Front_Bot?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Live Video</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpeg">
+                        <div>
+                            <p>Front_Bot</p>
+                            <span>November 10 2021, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Our team is expert in Frontend Web Development. Follow <span>@Frontboot</span> for
+                    more interesting web pages.<a href="#">#Frontbot</a> <a href="#">#WebDeveloper</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="like_btn1 like">
+                            <span id="icon1" class="icon"><i class="far fa-thumbs-up"></i></span>
+                            <span id="count1">15488</span>
+                        </div>
+                        <div><img src="images/comments.png">768</div>
+                        <div><img src="images/share.png">30</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpeg">
+                        <div>
+                            <p>Front_Bot</p>
+                            <span>November 10 2021, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Our team is expert in Frontend Web Development. Follow <span>@Frontboot</span> for
+                    more interesting web pages.<a href="#">#Frontbot</a> <a href="#">#WebDeveloper</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="like_btn2 like">
+                            <span id="icon2" class="icon"><i class="far fa-thumbs-up"></i></span>
+                            <span id="count2">12002</span>
+                        </div>
+                        <div><img src="images/comments.png">503</div>
+                        <div><img src="images/share.png">17</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpeg">
+                        <div>
+                            <p>Front_Bot</p>
+                            <span>October 18 2021, 10:30 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Our team is expert in Frontend Web Development. Follow <span>@Frontboot</span> for
+                    more interesting web pages.<a href="#">#Frontbot</a> <a href="#">#WebDeveloper</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="like_btn3 like">
+                            <span id="icon3" class="icon"><i class="far fa-thumbs-up"></i></span>
+                            <span id="count3">5981</span>
+                        </div>
+                        <div><img src="images/comments.png">292</div>
+                        <div><img src="images/share.png">34</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpeg">
+                        <div>
+                            <p>Front_Bot</p>
+                            <span>September 05 2021, 09:17 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Our team is expert in Frontend Web Development. Follow <span>@Frontboot</span> for
+                    more interesting web pages.<a href="#">#Frontbot</a> <a href="#">#WebDeveloper</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="like_btn4 like">
+                            <span id="icon4" class="icon"><i class="far fa-thumbs-up"></i></span>
+                            <span id="count4">892</span>
+                        </div>
+                        <div><img src="images/comments.png">106</div>
+                        <div><img src="images/share.png">29</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.jpeg">
+                        <div>
+                            <p>Front_Bot</p>
+                            <span>September 25 2021, 03:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Our team is expert in Frontend Web Development. Follow <span>@Frontboot</span> for
+                    more interesting web pages.<a href="#">#Frontbot</a> <a href="#">#WebDeveloper</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="like_btn5 like">
+                            <span id="icon5" class="icon"><i class="far fa-thumbs-up"></i></span>
+                            <span id="count5">458</span>
+                        </div>
+                        <div><img src="images/comments.png">56</div>
+                        <div><img src="images/share.png">21</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.jpeg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Lord More</button>
+        </div>
+        <!------------------right-sidebar----------------------->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>15</h3>
+                    <span>Nov</span>
+                </div>
+                <div class="right-event">
+                    <h4>CodeKaze</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp;Online Codezen</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>13</h3>
+                    <span>Nov</span>
+                </div>
+                <div class="right-event">
+                    <h4>Ideathon</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>&nbsp;Samudrapur</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/supriya.jpeg">
+                </div>
+                <p>Supriya Hansda</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/sugandha.jpg">
+                </div>
+                <p>Sugandha Kumari</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/sumesh.jpg">
+                </div>
+                <p>Sumesh Upadhyay</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <P>Copyright &copy; 2021 Team-FrontBot project on Web Dev Task-1 by Intern Academy</P>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

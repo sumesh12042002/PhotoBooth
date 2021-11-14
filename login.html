@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+ 
+</head>
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Popins','Allura',sans-serif;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-30deg,#03a9f4 0% ,#034aa7 50%,#242323 50%,#607d8b 100%);
+ filter: hue-rotate(120deg);
+ animation: animate 10s linear infinite;
+}
+.navbar {
+    margin-top: 0;
+    padding: 12px 0;
+    background: linear-gradient(-30deg, #03a9f4 0%, #034aa7 50%, #242323 50%, #607d8b 100%);
+    filter: hue-rotate(120deg);
+    animation: animate 10s linear infinite;
+  }
+
+  .max-width {
+    max-width: 1300px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .navbar .menu li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  button {
+    width: 100px;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button:hover {
+    text-decoration: underline;
+  }
+@keyframes animate
+{
+  0%
+  {
+    filter: hue-rotate(0deg);  
+  }
+  100%
+  {
+    filter: hue-rotate(360deg);  
+  }
+}
+section h1{
+  color: white;
+  margin-right: 200px;
+  font-size: 50px;}
+.box{
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 480px;
+  display: flex;
+  justify-content: center;align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+.box::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(to bottom,rgba(255,255,255,0.3)0%,rgba(255,255,255,0.1)15%, transparent 55%,transparent 85%,rgba(255,255,255,0.3)100%);
+}
+.box .form{position: relative;
+  width: 100%;
+}
+.box .form h2{
+  color: rgb(253, 250, 250);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .form.inputbx{
+  position: relative;
+  width: 100;margin-bottom: 30px;
+}
+ .inputbx input{
+   width: 100%;
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  background:transparent;
+  padding: 8px 10px;
+  border-radius: 6px;color: white;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);}
+
+ .inputbx a input[type="submit"]
+ {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  max-width: 100px;
+  padding:8px 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+ }
+
+ .remember{
+ position: relative;display: inline-block;
+  color: rgb(247, 241, 241);
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+ .box p{
+   color: white;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+</style>
+<body>
+  
+  <nav class="navbar">
+    <div class="max-width">
+        <ul class="menu">
+            <li> <button><a href="index.html">Back</a></button></li>
+        </ul>
+    </div>
+</nav>
+  <section>
+    
+    <h1>Welcome to the <br> World of Socialbook!!</h1>
+    <div class="box">
+    
+      <div class="form">
+
+        <h2>Login</h2>
+        <form>
+
+          <div class="inputbx">
+            <input type="text" placeholder="username">
+          </div><br>
+
+          <div class="inputbx">
+            <input type="password" placeholder="password">
+          </div><br>
+          
+          <label class="remember"><input type="checkbox">Remember Me</label>
+
+          <div class="inputbx">
+            <button><a href="gallery.html">Login</a></button>
+          </div>
+
+        </form>
+        <p>Forget <a href="">Password</a> ?</p>
+        <p>Need An Account?  <button><a href="signup.html">Signup</a></button></p>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
